@@ -9,7 +9,7 @@
  */
 
 import React from 'react';
-import Weather from './src/page/weather';
+import WeatherPage from './src/page/weather_page';
 import {
    SafeAreaView,
    ScrollView,
@@ -31,7 +31,7 @@ import {
 
 const App = () => {
   return (
-    <Weather></Weather>
+    <WeatherPage></WeatherPage>
   );
 };
 

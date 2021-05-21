@@ -6,15 +6,15 @@ import {
   View,
 } from 'react-native';
 
-const WeatherForecastDay: React.FC<{currentList: Array<Object>}> = (props) => {
+const WeatherForecastDay: React.FC<{list: Array<Object>}> = (props) => {
   
   return (
     <View>
       {
-        props.currentList.map((item: any, index: number) => {
+        props.list.map((item: any, index: number) => {
           return (
-            <View style={styles.container}>
-              <Text >{item.week}</Text>
+            <View style={styles.container} key={index}>
+              <Text>{item.week}</Text>
               <Text>{}</Text>
               <View style={styles.container}>
                 <View style={{marginRight: 30}}>
